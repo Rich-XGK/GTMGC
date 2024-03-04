@@ -1,0 +1,9 @@
+**/__pychache__
+**/wandb
+**.pyc
+**.bin
+**.pt
+**.pth
+**.pkl
+**.npy
+**.csv

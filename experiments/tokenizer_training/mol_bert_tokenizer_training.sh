@@ -1,0 +1,58 @@
+#!/usr/bin/env bash
+
+CUDA_VISIBLE_DEVICES='3' \
+    python \
+    -m expriments.tokenizer_training.mol_bert_tokenizer_training \
+    --output_dir=./results/MoleBERT-Tokenizer/Vocab_Size_1024 \
+    --run_name=Tokenizer-Vocab_Size_1024 \
+    --resume_from_checkpoint=False \
+    --overwrite_output_dir=True \
+    --do_train=False \
+    --do_eval=False \
+    --do_predict=False \
+    --evaluation_strategy=epoch \
+    --save_strategy=epoch \
+    --save_steps=5000 \
+    --save_total_limit=20 \
+    --logging_strategy=epoch \
+    --logging_steps=1000 \
+    --prediction_loss_only=False \
+    --per_device_train_batch_size=256 \
+    --per_device_eval_batch_size=256 \
+    --gradient_accumulation_steps=1 \
+    --num_train_epochs=20 \
+    --warmup_ratio=0.0 \
+    --warmup_steps=0 \
+    --learning_rate=0.001 \
+    --lr_scheduler_type=linear \
+    --optim=adamw_torch \
+    --eval_delay=0 \
+    --weight_decay=0.0 \
+    --adam_beta1=0.9 \
+    --adam_beta2=0.99 \
+    --adam_epsilon=1e-8 \
+    --max_grad_norm=1.0 \
+    --max_steps=-1 \
+    --log_level=info \
+    --seed=42 \
+    --data_seed=42 \
+    --use_ipex=False \
+    --bf16=False \
+    --fp16=True \
+    --fp16_opt_level=O1 \
+    --half_precision_backend=auto \
+    --bf16_full_eval=False \
+    --fp16_full_eval=False \
+    --tf32=False \
+    --dataloader_drop_last \
+    --dataloader_num_workers=8 \
+    --disable_tqdm=False \
+    --remove_unused_columns=False \
+    --label_names=node_type \
+    --load_best_model_at_end=True \
+    --metric_for_best_model=loss \
+    --greater_is_better=False \
+    --push_to_hub=False \
+    --include_inputs_for_metrics=False \
+    --torch_compile=False \
+    --report_to=wandb
