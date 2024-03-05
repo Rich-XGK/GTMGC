@@ -99,7 +99,7 @@ bash expriments/conformer_prediction/gtmgc_for_conformer_prediction.sh
 
 **note:** One should modify the tokenized dataset path or other hyperparameters in the script before running the training.
 
-**checkpoints:** We have hosted the trained checkpoints ["RichXuOvO/GTMGC-Molecule3D-Random"](https://huggingface.co/RichXuOvO/GTMGC-Molecule3D), ["RichXuOvO/GTMGC-Molecule3D-Scaffold"](https://huggingface.co/RichXuOvO/GTMGC-Molecule3D-Scaffold), ["RichXuOvO/GTMGC-Qm9"](https://huggingface.co/RichXuOvO/GTMGC-Qm9) on Hugging Face. Users can download it to local "/path/to/checkpoint" or directly load the weights when predicting ground-state conformations and evaluating the performance.
+**checkpoints:** We have hosted the trained checkpoints ["RichXuOvO/GTMGC-Molecule3D-Random"](https://huggingface.co/RichXuOvO/GTMGC-Molecule3D- Random), ["RichXuOvO/GTMGC-Molecule3D-Scaffold"](https://huggingface.co/RichXuOvO/GTMGC-Molecule3D-Scaffold), ["RichXuOvO/GTMGC-Qm9"](https://huggingface.co/RichXuOvO/GTMGC-Qm9) on Hugging Face. Users can download it to local "/path/to/checkpoint" or directly load the weights when predicting ground-state conformations and evaluating the performance.
 
 #### Evaluation
 
