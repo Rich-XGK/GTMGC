@@ -149,7 +149,7 @@ bash experiments/graph_regression/gtmgc_for_graph_regression.sh
 
 **note:** One should modify the dataset or other hyperparameters in the script before running the training.
 
-**checkpoints:** We have hosted the trained checkpoints ["RichXuOvO/GTMGC_Small-Molecule3D-Random-Gap](), ["RichXuOvO/GTMGC_Base-Molecule3D-Random-Gap"](), ["RichXuOvO/GTMGC_Large-Molecule3D-Random-Gap"]() on Hugging Face. Users can download it to local "/path/to/checkpoint" or directly load the weights when predicting molecular properties and evaluating the performance.
+**checkpoints:** We have hosted the trained checkpoints ["RichXuOvO/GTMGC_Small-Molecule3D-Random-Gap](https://huggingface.co/RichXuOvO/GTMGC_Small-Molecule3D-Random-Gap), ["RichXuOvO/GTMGC_Base-Molecule3D-Random-Gap"](https://huggingface.co/RichXuOvO/GTMGC_Base-Molecule3D-Random-Gap), ["RichXuOvO/GTMGC_Large-Molecule3D-Random-Gap"](https://huggingface.co/RichXuOvO/GTMGC_Large-Molecule3D-Random-Gap) on Hugging Face. Users can download it to local "/path/to/checkpoint" or directly load the weights when predicting molecular properties and evaluating the performance.
 
 #### Evaluation
 
