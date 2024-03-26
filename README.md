@@ -40,7 +40,7 @@ The ground-state conformation of a molecule is often decisive for its properties
 
 ```bash
 # clone the environment
-conda env create -f environment.yml
+conda env create -f environment.yaml
 # activate the environment
 conda activate gtmgc
 ```
